@@ -1,4 +1,4 @@
-#***LESGOOOO***
+#👇🏼Look here👇🏼
 
 ![](ideas/icona.png)
 
@@ -8,4 +8,4 @@
 
 ## Aggiornamenti:
 
-1. 28/10: Apertura repository e creazione dominio con github pages
+0. 28/10: Apertura repository e creazione dominio con github pages
