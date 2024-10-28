@@ -1,6 +1,6 @@
 # 👇🏼Look here👇🏼
 
-![](ideas/icona.png)
+![](docs/images/icona.png)
 
 ## Sito web:
 
