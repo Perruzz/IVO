@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f6e8e3;
+}
+
+#logo_titolo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+#titolo
+{
+    font-family: Updock;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+nav button img {
+    width: 24px;
+    height: 24px;
+}
+
+#newsletter {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #f6e8e3;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 10px;
+    border-color: #f3e1db;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.box-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box {
+    flex: 1;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+#benessere {
+    background-image: url(images/Designer.jpeg);
+}
+
+#finanza {
+    background-image: url(images/Designer\ \(1\).jpeg);
+}
+
+#attualita {
+    background-image: url(images/Designer\ \(2\).jpeg);
+}
+
+.timer-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#recensioni {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f6e8e3;
+    border-radius: 8px;
+}
+
+.recensione {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
