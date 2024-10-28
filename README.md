@@ -8,4 +8,5 @@
 
 ## Aggiornamenti:
 
-0. 28/10: Apertura repository e creazione dominio con github pages
+1. 28/10: Apertura repository e creazione dominio con github pages
+2. 28/10: stesura index.html e style.css
