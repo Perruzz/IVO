@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ipse Valere Opto</title>
     <meta name="description" content="Portale di informazione su benessere, finanza e attualità">
     <meta name="keywords" content="benessere, finanza, attualità, news, salute, economia">
     <meta name="author" content="Ipse Valere Opto">
+    <link rel="shortcut icon" href="images/icona.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
     <script src="https://kit.fontawesome.com/106bf6696a.js" crossorigin="anonymous"></script>
+
+    <!--font titolo pagina-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+    <!--------------------------------------------------->
+
 </head>
 <body>
+
     <header>
         <img src="images/icona.png" alt="Logo Ipse Valere Opto" id="logo_titolo">
         <h1 id="titolo">Ipse Valere Opto</h1>
@@ -31,20 +40,17 @@
         </button>      
     </nav>
 
-    <table id="newsletter">
-        <tr>
-            <td>
-                <h2>Iscriviti alla nostra newsletter</h2>
-                <p>Ricevi le ultime notizie direttamente nella tua casella email</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Inserisci la tua email">
-                    <button type="submit">Iscriviti</button>
-                </form>
-            </td>
-        </tr>
-    </table>
-
     <main>
+
+        <div id="newsletter">
+            <h2>Iscriviti alla nostra newsletter</h2>
+            <p>Ricevi le ultime notizie direttamente nella tua casella email</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Inserisci la tua email">
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+
         <div class="box-container">
             <div id="benessere" class="box">
                 <h2>Benessere</h2>
@@ -88,56 +94,5 @@
         <p>Privacy Policy | Termini e Condizioni | Cookie Policy</p>
     </footer>
 
-    <script>
-        function updateTimers() {
-            const now = new Date();
-            const rome = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Rome' }));
-            
-            const target = new Date(rome);
-            target.setHours(18, 0, 0, 0);
-
-            if (target <= rome) {
-                target.setDate(target.getDate() + 1);
-            }
-
-            // Trova il prossimo lunedì
-            while (target.getDay() !== 1) {
-                target.setDate(target.getDate() + 1);
-            }
-            const lunediDiff = target - rome;
-            
-            // Trova il prossimo mercoledì
-            target.setDate(target.getDate() + 2);
-            const mercolediDiff = target - rome;
-            
-            // Trova il prossimo venerdì
-            target.setDate(target.getDate() + 2);
-            const venerdiDiff = target - rome;
-
-            function formatTime(ms) {
-                const hours = Math.floor(ms / (1000 * 60 * 60));
-                const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-                return `${hours}h ${minutes}m`;
-            }
-
-            document.getElementById('timer-lunedi').innerHTML = `
-                <h3>Prossimo aggiornamento Benessere</h3>
-                <p>Mancano: ${formatTime(lunediDiff)}</p>
-            `;
-            
-            document.getElementById('timer-mercoledi').innerHTML = `
-                <h3>Prossimo aggiornamento Finanza</h3>
-                <p>Mancano: ${formatTime(mercolediDiff)}</p>
-            `;
-            
-            document.getElementById('timer-venerdi').innerHTML = `
-                <h3>Prossimo aggiornamento Attualità</h3>
-                <p>Mancano: ${formatTime(venerdiDiff)}</p>
-            `;
-        }
-
-        updateTimers();
-        setInterval(updateTimers, 60000); // Aggiorna ogni minuto
-    </script>
 </body>
 </html>

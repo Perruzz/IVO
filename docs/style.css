@@ -150,12 +150,14 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-@media (max-width: 768px) {
-    .box-container {
+@media (max-width: 768px) 
+{
+    .box-container 
+    {
         flex-direction: column;
     }
-
-    .box {
-        flex-basis: auto;
+    .timer-container
+    {
+        flex-direction: column;
     }
 }
