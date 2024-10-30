@@ -46,6 +46,8 @@ nav button {
 
 #newsletter {
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 600px;
     padding: 2rem;
     background-color: var(--maincolor);
@@ -69,7 +71,7 @@ nav button {
 
 .newsletter-form button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #ee69a1;
     color: white;
     border: none;
     cursor: pointer;
@@ -78,7 +80,7 @@ nav button {
 
 main {
     padding: 2rem;
-    background-color: #fbf5f3;
+    background-color: #d8cdca;
 }
 
 .box-container {
@@ -103,14 +105,17 @@ main {
 
 #benessere {
     background-image: url(images/Designer.jpeg);
+    background-position: center;
 }
 
 #finanza {
     background-image: url(images/Designer\ \(1\).jpeg);
+    background-position: center;
 }
 
 #attualita {
     background-image: url(images/Designer\ \(2\).jpeg);
+    background-position: center;
 }
 
 .timer-container {
@@ -131,6 +136,9 @@ main {
     padding: 2rem;
     background-color: var(--maincolor);
     border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recensione {
