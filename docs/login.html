@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(images/fiore.png);
+            /* Sostituisci con l'URL dell'immagine del fiore di loto */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            background-position: center;
+        }
+
+        .login-container {
+            background-color: rgba(173, 216, 230, 0.3);
+            /* Verde pastello con trasparenza */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 93%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-right: auto;
+            border-left: auto;
+
+            border: #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff69b4;
+            /* Rosa brillante */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+            /* Rosa scuro al passaggio del mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Nome utente" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Accedi</button>
+            <a href="register.html">
+                <button type="button">Registrati</button>
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>

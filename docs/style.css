@@ -2,49 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
+  }
+  
+  :root {
     --maincolor: #f6e8e3;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-header {
+  }
+  
+  header {
     text-align-last: center;
     padding: 1rem;
     background-color: var(--maincolor);
-}
-
-#logo_titolo {
+  }
+  
+  #logo_titolo {
     width: 50px;
     height: 50px;
-}
-
-#titolo
-{
+  }
+  
+  #titolo {
     font-family: Updock;
-}
-
-nav {
+  }
+  
+  nav {
     background-color: #f9efeb;
     padding: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-nav button {
+  }
+  
+  nav button {
     cursor: pointer;
     background: none;
     border: none;
-}
-
-
-#newsletter {
+  }
+  
+  
+  #newsletter {
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -53,43 +52,43 @@ nav button {
     background-color: var(--maincolor);
     border-radius: 10px;
     text-align: center;
-}
-
-.newsletter-form {
+  }
+  
+  .newsletter-form {
     display: flex;
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
-}
-
-.newsletter-form input {
+  }
+  
+  .newsletter-form input {
     padding: 0.5rem;
     width: 300px;
     border-radius: 10px;
     border-color: #f3e1db;
-}
-
-.newsletter-form button {
+  }
+  
+  .newsletter-form button {
     padding: 0.5rem 1rem;
     background-color: #ee69a1;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 10px;
-}
-
-main {
+  }
+  
+  main {
     padding: 2rem;
     background-color: #d8cdca;
-}
-
-.box-container {
+  }
+  
+  .box-container {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-}
-
-.box {
+  }
+  
+  .box {
     flex: 1;
     padding: 2rem;
     color: white;
@@ -97,41 +96,41 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s;
-}
-
-.box:hover {
+  }
+  
+  .box:hover {
     transform: translateY(-5px);
-}
-
-#benessere {
+  }
+  
+  #benessere {
     background-image: url(images/Designer.jpeg);
     background-position: center;
-}
-
-#finanza {
+  }
+  
+  #finanza {
     background-image: url(images/Designer\ \(1\).jpeg);
     background-position: center;
-}
-
-#attualita {
+  }
+  
+  #attualita {
     background-image: url(images/Designer\ \(2\).jpeg);
     background-position: center;
-}
-
-.timer-container {
+  }
+  
+  .timer-container {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-}
-
-.timer {
+  }
+  
+  .timer {
     flex: 1;
     text-align: center;
     padding: 1rem;
     border-radius: 8px;
-}
-
-#recensioni {
+  }
+  
+  #recensioni {
     margin-top: 2rem;
     padding: 2rem;
     background-color: var(--maincolor);
@@ -139,31 +138,59 @@ main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.recensione {
+  }
+  
+  .recensione {
     margin-top: 20px;
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: white;
     border-radius: 4px;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #ffffff;
     color: black;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-@media (max-width: 768px) 
-{
-    .box-container 
-    {
-        flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .box-container {
+      flex-direction: column;
     }
-    .timer-container
-    {
-        flex-direction: column;
+  
+    .timer-container {
+      flex-direction: column;
     }
-}
+  }
+  
+  .language-dialog {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .language-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .language-options button {
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .language-options button:hover {
+    background-color: #f5f5f5;
+  }

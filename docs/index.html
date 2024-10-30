@@ -1,98 +1,119 @@
 <!DOCTYPE html>
 <html lang="it">
+
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ipse Valere Opto</title>
-    <meta name="description" content="Portale di informazione su benessere, finanza e attualità">
-    <meta name="keywords" content="benessere, finanza, attualità, news, salute, economia">
-    <meta name="author" content="Ipse Valere Opto">
-    <link rel="shortcut icon" href="images/icona.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ipse Valere Opto</title>
+  <meta name="description" content="Portale di informazione su benessere, finanza e attualità">
+  <meta name="keywords" content="benessere, finanza, attualità, news, salute, economia">
+  <meta name="author" content="Ipse Valere Opto">
+  <link rel="shortcut icon" href="images/icona.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
-    <script src="https://kit.fontawesome.com/106bf6696a.js" crossorigin="anonymous"></script>
-
-    <!--font titolo pagina-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
-    <!--------------------------------------------------->
+  <!--font titolo pagina-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+  <!--------------------------------------------------->
 
 </head>
+
+
 <body>
 
-    <header>
-        <img src="images/icona.png" alt="Logo Ipse Valere Opto" id="logo_titolo">
-        <h1 id="titolo">Ipse Valere Opto</h1>
-    </header>
+  <header>
+    <img src="images/icona.png" alt="Logo Ipse Valere Opto" id="logo_titolo">
+    <h1 id="titolo">Ipse Valere Opto</h1>
+  </header>
 
-    <nav>
-        <button id="revealsearchform">
-            <i class="fa-solid fa-right-to-bracket" style="color: #B197FC;"> Login</i>
-        </button>
+  <nav>
+    <a href="login.html" id="login">
+      <button type="button">
+        Login
+      </button>
+    </a>
+    <a href="register.html" id="register">
+      <button type="button">
+          Register
+      </button>
+    </a>
         <button id="language">
-            <i class="fa-solid fa-language" style="color: #B197FC;"> Lingua</i>
+          <i class="fa-solid fa-globe"></i> Lingua
         </button>
-        <button id="login">
-            <i class="fa-solid fa-magnifying-glass" style="color: #B197FC;"> cerca</i>
-        </button>      
+
+    <div id="languageDialog" class="language-dialog">
+        <div class="language-options">
+          <button onclick="changeLanguage('it')">
+            🇮🇹 Italiano
+          </button>
+          <button onclick="changeLanguage('en')">
+            🇬🇧 English
+          </button>
+        </div>
+      </div>
     </nav>
 
-    <main>
 
-        <div id="newsletter">
-            <h2>Iscriviti alla nostra newsletter</h2>
-            <p>Ricevi le ultime notizie direttamente nella tua casella email</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Inserisci la tua email">
-                <button type="submit">Iscriviti</button>
-            </form>
-        </div>
 
-        <div class="box-container">
-            <div id="benessere" class="box">
-                <h2>Benessere</h2>
-                <p>Consigli e guide per il tuo benessere</p>
-            </div>
-            <div id="finanza" class="box">
-                <h2>Finanza</h2>
-                <p>Analisi e aggiornamenti finanziari</p>
-            </div>
-            <div id="attualita" class="box">
-                <h2>Attualità</h2>
-                <p>Le ultime notizie dal mondo</p>
-            </div>
-        </div>
+  <main>
 
-        <div class="timer-container">
-            <div class="timer" style="color: #28a745" id="timer-lunedi"></div>
-            <div class="timer" style="color: #17a2b8" id="timer-mercoledi"></div>
-            <div class="timer" style="color: #dc3545" id="timer-venerdi"></div>
-        </div>
+    <div id="newsletter">
+      <h2>Iscriviti alla nostra newsletter</h2>
+      <p>Ricevi le ultime notizie direttamente nella tua casella email</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Inserisci la tua email">
+        <button type="submit">Iscriviti</button>
+      </form>
+    </div>
 
-        <div id="recensioni">
-            <h2>Cosa dicono i nostri lettori</h2>
-            <div class="recensione">
-                <h3>Marco R.</h3>
-                <p>"Articoli sempre interessanti e ben documentati. La sezione benessere mi ha aiutato molto!"</p>
-            </div>
-            <div class="recensione">
-                <h3>Laura B.</h3>
-                <p>"Grazie ai consigli finanziari ho iniziato a gestire meglio i miei risparmi."</p>
-            </div>
-            <div class="recensione">
-                <h3>Giovanni M.</h3>
-                <p>"Notizie sempre aggiornate e verificate. Il mio sito di riferimento per l'attualità."</p>
-            </div>
-        </div>
-    </main>
+    <div class="box-container">
+      <div id="benessere" class="box">
+        <h2>Benessere</h2>
+        <p>Consigli e guide per il tuo benessere</p>
+      </div>
+      <div id="finanza" class="box">
+        <h2>Finanza</h2>
+        <p>Analisi e aggiornamenti finanziari</p>
+      </div>
+      <div id="attualita" class="box">
+        <h2>Attualità</h2>
+        <p>Le ultime notizie dal mondo</p>
+      </div>
+    </div>
 
-    <footer>
-        <p>© 2024 Ipse Valere Opto. Tutti i diritti riservati.</p>
-        <p>Privacy Policy | Termini e Condizioni | Cookie Policy</p>
-    </footer>
+    <div class="timer-container">
+      <div class="timer" style="color: #28a745" id="timer-lunedi"></div>
+      <div class="timer" style="color: #17a2b8" id="timer-mercoledi"></div>
+      <div class="timer" style="color: #dc3545" id="timer-venerdi"></div>
+    </div>
+
+    <div id="recensioni">
+      <h2>Cosa dicono i nostri lettori</h2>
+      <div class="recensione">
+        <h3>Marco R.</h3>
+        <p>"Articoli sempre interessanti e ben documentati. La sezione benessere mi ha aiutato molto!"</p>
+      </div>
+      <div class="recensione">
+        <h3>Laura B.</h3>
+        <p>"Grazie ai consigli finanziari ho iniziato a gestire meglio i miei risparmi."</p>
+      </div>
+      <div class="recensione">
+        <h3>Giovanni M.</h3>
+        <p>"Notizie sempre aggiornate e verificate. Il mio sito di riferimento per l'attualità."</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 Ipse Valere Opto. Tutti i diritti riservati.</p>
+    <p>Privacy Policy | Termini e Condizioni | Cookie Policy</p>
+  </footer>
 
 </body>
+
+
 </html>

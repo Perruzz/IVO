@@ -1,5 +1,4 @@
-function updateTimers() 
-{
+function updateTimers() {
     const now = new Date();
     const rome = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Rome' }));
 
@@ -48,3 +47,32 @@ function updateTimers()
 
 updateTimers();
 setInterval(updateTimers, 60000);
+
+
+const languageBtn = document.getElementById('language');
+const dialog = document.getElementById('languageDialog');
+
+// Mostra/nascondi il dialogo quando si clicca il bottone
+languageBtn.addEventListener('click', () => {
+    const isVisible = dialog.style.display === 'block';
+    dialog.style.display = isVisible ? 'none' : 'block';
+});
+
+// Chiudi il dialogo se si clicca fuori
+document.addEventListener('click', (event) => {
+    if (!dialog.contains(event.target) && event.target !== languageBtn) {
+        dialog.style.display = 'none';
+    }
+});
+
+// Funzione per cambiare la lingua
+function changeLanguage(lang) {
+    // Qui puoi aggiungere la logica per cambiare la lingua
+    console.log('Lingua selezionata:', lang);
+    // Esempio:
+    // localStorage.setItem('preferredLanguage', lang);
+    // location.reload();
+
+    // Chiudi il dialogo dopo la selezione
+    dialog.style.display = 'none';
+}
