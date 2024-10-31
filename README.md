@@ -4,7 +4,7 @@
 
 ## Sito web:
 
-👉🏼[IPSE VALERE OPTO](https://c1aud1aa.github.io/ipse_valere_opto_website/)👈🏼
+👉🏼[IPSE VALERE OPTO](https://perruzz.github.io/ipse_valere_opto_website/)👈🏼
 
 ## Aggiornamenti:
 
