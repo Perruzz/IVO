@@ -1,12 +1,5 @@
-# 👇🏼Look here👇🏼
-
 ![](docs/images/icona.png)
 
-## Sito web:
+## Sito prova:
 
 👉🏼[IPSE VALERE OPTO](https://perruzz.github.io/ipse_valere_opto_website/)👈🏼
-
-## Aggiornamenti:
-
-1. 28/10: Apertura repository e creazione dominio con github pages
-2. 28/10: stesura index.html e style.css
