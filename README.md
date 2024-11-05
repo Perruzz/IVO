@@ -1,4 +1,4 @@
-![](docs/images/icona.png)
+![skibidi](docs/images/icona.png)
 
 ## Sito prova:
 
